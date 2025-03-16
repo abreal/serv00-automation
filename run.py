@@ -25,7 +25,6 @@ def ssh_multiple_connections(hosts_info, command):
     return users, hostnames
 
 ssh_info_str = os.getenv('SSH_INFO', '[]')
-print(f"ssh_info_str: {ssh_info_str}")
 hosts_info = json.loads(ssh_info_str)
 
 command = 'whoami'
